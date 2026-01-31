@@ -1,0 +1,20 @@
+{
+  "tests": [
+    {
+      "name": "svd_image_to_video",
+      "input": {
+        "image_url": "https://storage.googleapis.com/ssm-renders-8822/test.png"
+      },
+      "timeout": 900000
+    }
+  ],
+  "config": {
+    "gpuTypeId": "NVIDIA GeForce RTX 4090",
+    "gpuCount": 1,
+    "allowedCudaVersions": [
+      "12.1",
+      "12.2",
+      "12.3"
+    ]
+  }
+}
