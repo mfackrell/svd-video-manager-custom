@@ -3,6 +3,7 @@
   "description": "Stable Video Diffusion image-to-video worker",
   "type": "serverless",
   "category": "video",
+  "handler": "handler.py",
   "config": {
     "runsOn": "GPU",
     "containerDiskInGb": 40,
