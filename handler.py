@@ -3,6 +3,8 @@ import time
 import requests
 from diffusers import StableVideoDiffusionPipeline
 import torch
+import runpod
+
 
 print("BOOTING SVD WORKER")
 print("CUDA:", torch.version.cuda)
@@ -32,3 +34,8 @@ def handler(event):
         "status": "COMPLETED",
         "video_path": output_path
     }
+
+# 🚨 THIS LINE IS REQUIRED
+runpod.serverless.start({
+    "handler": handler
+})
