@@ -1,3 +1,13 @@
-functions-framework==3.*
-requests==2.31.0
-google-cloud-storage==2.14.0
+torch==2.1.2
+torchvision==0.16.2
+torchaudio==2.1.2
+
+diffusers==0.24.0
+transformers==4.36.2
+accelerate==0.25.0
+xformers==0.0.23.post1
+
+opencv-python
+pillow
+requests
+
