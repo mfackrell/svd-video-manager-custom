@@ -1,0 +1,18 @@
+{
+  "title": "SVD Video Manager (Custom)",
+  "description": "Stable Video Diffusion image-to-video worker",
+  "type": "serverless",
+  "category": "video",
+  "config": {
+    "runsOn": "GPU",
+    "containerDiskInGb": 40,
+    "gpuCount": 1,
+    "env": [],
+    "inputs": {
+      "image_url": {
+        "type": "string",
+        "description": "Public URL to the source image"
+      }
+    }
+  }
+}
